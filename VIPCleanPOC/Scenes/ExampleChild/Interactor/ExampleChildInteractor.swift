@@ -16,7 +16,6 @@ class ExampleChildInteractor: ExampleChildInteractorProtocol
     weak var presenter: ExampleChildPresenterProtocol?
     
     func viewLoaded() {
-        presenter?.processViewLoaded()
     }
     
 }

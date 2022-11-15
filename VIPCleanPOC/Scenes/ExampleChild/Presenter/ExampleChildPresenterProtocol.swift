@@ -14,6 +14,5 @@ import Foundation
 protocol ExampleChildPresenterProtocol: AnyObject {
     
     var controller: ExampleChildControllerProtocol? { get set }
-    
-    func processViewLoaded()
+
 }

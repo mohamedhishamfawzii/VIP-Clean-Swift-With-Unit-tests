@@ -14,7 +14,7 @@ import UIKit
 class ExampleInteractor: ExampleInteractorProtocol {
     //MARK: Dependencies
     weak var presenter: ExamplePresenterProtocol?
-
+    private let exampleWorker = AppBuilderProvider().forceProvide().networkService.exampleWorker
     
     func fetchUser(with mobile:String) {
         //intialize the network call using the network client and when the response is returned the interactor delegates it to the presenter

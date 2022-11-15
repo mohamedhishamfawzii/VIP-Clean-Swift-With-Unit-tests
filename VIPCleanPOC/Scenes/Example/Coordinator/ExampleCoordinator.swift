@@ -80,6 +80,7 @@ private extension ExampleCoordinator {
             case .close, .back:
                 self.dependencies.removeElementByReference(coordinator)
                 self.navigationController?.popViewController(animated: true)
+                //push transactions
             }
         }
         self.dependencies.append(coordinator)

@@ -14,6 +14,5 @@ import Foundation
 protocol ExampleChildInteractorProtocol
 {
     var presenter: ExampleChildPresenterProtocol? { set get }
-    
-    func viewLoaded()
+
 }

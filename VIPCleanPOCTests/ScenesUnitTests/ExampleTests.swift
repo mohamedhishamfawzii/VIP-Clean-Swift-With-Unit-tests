@@ -17,7 +17,7 @@ final class ExampleTests: XCTestCase {
 }
 
 //MARK: Seeds
-struct Seeds {
+fileprivate struct Seeds {
     struct Users {
         static let hisham = ServerResponseUserData(username: "Hisham@",
                                                    email: "m.hisham@live.com",
@@ -25,7 +25,7 @@ struct Seeds {
     }
 }
 //MARK: Spies
-class InteractorSpy: ExampleInteractorProtocol {
+fileprivate class InteractorSpy: ExampleInteractorProtocol {
     var presenter:ExamplePresenterProtocol?
     func fetchUser(with mobile: String) {
     }
@@ -33,7 +33,7 @@ class InteractorSpy: ExampleInteractorProtocol {
         self.presenter = presenter
     }
 }
-class ControllerSpy: ExampleControllerProtocol {
+fileprivate class ControllerSpy: ExampleControllerProtocol {
     var interactor: ExampleInteractorProtocol
     var callback: ExampleControllerCallback
     var view: ExampleViewProtocol?
@@ -50,7 +50,7 @@ class ControllerSpy: ExampleControllerProtocol {
         self.interactor = interactor
     }
 }
-class PresenterSpy: ExamplePresenterProtocol {
+fileprivate class PresenterSpy: ExamplePresenterProtocol {
     var controller: ExampleControllerProtocol?
     var presentSuccessCalled = false
     func processSuccess(result:ServerResponseUserData){
@@ -60,7 +60,7 @@ class PresenterSpy: ExamplePresenterProtocol {
         self.controller = controller
     }
 }
-class ViewSpy: ExampleViewProtocol {
+fileprivate class ViewSpy: ExampleViewProtocol {
     var callback:ExampleViewCallback?
     var user: ExampleViewModelProtocol?
     func display(viewModel:ExampleViewModelProtocol) {
