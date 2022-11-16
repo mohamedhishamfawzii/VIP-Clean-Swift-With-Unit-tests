@@ -24,7 +24,7 @@ class Environment: EnvironmentProvider {
         self.type = type
     }
     var baseURL: URL {
-        var stringURL = ""
+        var stringURL = "google.com"
         
         switch type {
         case .dev: stringURL = "dev"

@@ -15,7 +15,7 @@ class NetworkClient:NetworkClientProtocol {
                  requestHeaders: NetworkHTTPHeaders?,
                  requestTimeout: TimeInterval?,
                  responseHandler: @escaping ((NetworkServiceResponse) -> ())) {
-        
+    
         
     }
     

@@ -39,6 +39,7 @@
 		77BD3DE32923C312000A1DB2 /* ExampleWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BD3DE22923C312000A1DB2 /* ExampleWorker.swift */; };
 		77BD3DE52923C683000A1DB2 /* ExampleWorkerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BD3DE42923C683000A1DB2 /* ExampleWorkerProtocol.swift */; };
 		77BD3DE72923C6E1000A1DB2 /* BaseWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BD3DE62923C6E1000A1DB2 /* BaseWorker.swift */; };
+		77BD3DF12924F6ED000A1DB2 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 77BD3DF02924F6ED000A1DB2 /* Moya */; };
 		77D2F994291D0B8000CAF269 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D2F993291D0B8000CAF269 /* AppDelegate.swift */; };
 		77D2F996291D0B8000CAF269 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D2F995291D0B8000CAF269 /* SceneDelegate.swift */; };
 		77D2F99D291D0B8000CAF269 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77D2F99C291D0B8000CAF269 /* Assets.xcassets */; };
@@ -168,6 +169,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77BD3DF12924F6ED000A1DB2 /* Moya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,18 +296,42 @@
 		77BD3DEB2923CB5E000A1DB2 /* NetworkHandling */ = {
 			isa = PBXGroup;
 			children = (
-				77BD3DE02923B08A000A1DB2 /* NetworkParameter.swift */,
-				77BD3DDE2922711A000A1DB2 /* HeaderProvider.swift */,
-				77BD3DDC29226E70000A1DB2 /* Enviroment.swift */,
-				77BD3DDA29226DB0000A1DB2 /* NetworkAction.swift */,
-				77BD3DD829226C28000A1DB2 /* PathProvider.swift */,
-				77BD3DD6292269E5000A1DB2 /* NetworkService.swift */,
-				77BD3DD429226825000A1DB2 /* NetworkClient.swift */,
-				77BD3DCC29226365000A1DB2 /* NetworkClientProtocol.swift */,
+				77BD3DEE2924F2D6000A1DB2 /* Network Client */,
+				77BD3DED2924F2B6000A1DB2 /* Providers */,
+				77BD3DEC2924F2A8000A1DB2 /* Network Service */,
 				77BD3DCE292264D0000A1DB2 /* NetworkHTTPHelper.swift */,
-				77BD3DCA292260FD000A1DB2 /* NetworkServiceProtocol.swift */,
 			);
 			path = NetworkHandling;
+			sourceTree = "<group>";
+		};
+		77BD3DEC2924F2A8000A1DB2 /* Network Service */ = {
+			isa = PBXGroup;
+			children = (
+				77BD3DDC29226E70000A1DB2 /* Enviroment.swift */,
+				77BD3DCA292260FD000A1DB2 /* NetworkServiceProtocol.swift */,
+				77BD3DD6292269E5000A1DB2 /* NetworkService.swift */,
+			);
+			path = "Network Service";
+			sourceTree = "<group>";
+		};
+		77BD3DED2924F2B6000A1DB2 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				77BD3DDA29226DB0000A1DB2 /* NetworkAction.swift */,
+				77BD3DE02923B08A000A1DB2 /* NetworkParameter.swift */,
+				77BD3DD829226C28000A1DB2 /* PathProvider.swift */,
+				77BD3DDE2922711A000A1DB2 /* HeaderProvider.swift */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		77BD3DEE2924F2D6000A1DB2 /* Network Client */ = {
+			isa = PBXGroup;
+			children = (
+				77BD3DCC29226365000A1DB2 /* NetworkClientProtocol.swift */,
+				77BD3DD429226825000A1DB2 /* NetworkClient.swift */,
+			);
+			path = "Network Client";
 			sourceTree = "<group>";
 		};
 		77D2F987291D0B8000CAF269 = {

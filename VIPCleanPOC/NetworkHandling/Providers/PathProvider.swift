@@ -9,7 +9,7 @@ import Foundation
 typealias Endpoint = String
 
 fileprivate struct Endpoints {
-    static let login: Endpoint = "/users/login"
+    static let login: Endpoint = ""
 }
 
 
@@ -23,7 +23,7 @@ class PathProvider: PathProviderProtocol {
     func createURL(type: NetworkAction) -> URL? {
         switch type {
         case .login:
-            return URL(string: "")
+            return URL(string: "google.com")
         }
     }
 }

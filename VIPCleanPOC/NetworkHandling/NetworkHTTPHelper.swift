@@ -26,7 +26,7 @@ typealias NetworkHTTPParameters = [String: AnyHashable]
 typealias NetworkHTTPHeaders = [String: String]
 
 enum NetworkServiceResponse {
-    case successData(_ data: Data?)
+    case successData(_ data: Codable?)
     case errors(ErrorsNetworkServiceType)
 }
 

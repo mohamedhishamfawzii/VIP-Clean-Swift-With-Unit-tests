@@ -8,5 +8,5 @@
 import Foundation
 
 protocol ExampleWorkerProtocol {
-
+    func exampleRequest(completion:@escaping ExampleRequestCompletion)
 }

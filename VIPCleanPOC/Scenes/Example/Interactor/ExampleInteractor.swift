@@ -23,6 +23,15 @@ class ExampleInteractor: ExampleInteractorProtocol {
         let result = ServerResponseUserData(username: "Hisham@",
                                             email: "m.hisham@live.com",
                                             balance: "2,000")
+        exampleWorker.exampleRequest{ [weak self] (result) in
+            switch result {
+            case .success(_):
+                print("Success")
+            case .failure(_):
+                print("Failure")
+            }
+            
+        }
         self.presenter?.processSuccess(result: result)
     }
     

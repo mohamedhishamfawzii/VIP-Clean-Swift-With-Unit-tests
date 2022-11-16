@@ -9,9 +9,6 @@ import UIKit
 
 class AppBuilderProvider {
     func forceProvide() -> AppBuilder {
-        guard let delegate = UIApplication.shared.delegate as? AppBuilder else {
-            fatalError("What are you do with App Delegate?!")
-        }
-        return delegate
+        return AppBuilder()
     }
 }
