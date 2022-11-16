@@ -13,19 +13,19 @@ class NetworkService: NetworkServiceProtocol {
        return makeExampleWorker()
    }
 
-   private let networkService: NetworkClientProtocol
+   private let networkClient: NetworkClientProtocol
    private let pathProvider: PathProviderProtocol
    private let networkHeader: NetworkHeaderProvider
    private let networkParameters: NetworkParameterProvider
    
    let authManager: AuthManagerProtocol
    
-   init(networkService: NetworkClientProtocol,
+   init(networkClient: NetworkClientProtocol,
         path: PathProviderProtocol,
         networkHeader: NetworkHeaderProvider,
         parameters: NetworkParameterProvider,
         authManager: AuthManagerProtocol) {
-       self.networkService = networkService
+       self.networkClient = networkClient
        self.pathProvider = path
        self.networkParameters = parameters
        self.networkHeader = networkHeader
@@ -34,7 +34,7 @@ class NetworkService: NetworkServiceProtocol {
 }
 extension NetworkService {
 func makeExampleWorker() -> ExampleWorker {
-            return ExampleWorker(networkService: networkService,
+            return ExampleWorker(networkClient: networkClient,
                                  pathProvider: pathProvider,
                                  networkParameters: networkParameters,
                                  networkHeader: networkHeader,

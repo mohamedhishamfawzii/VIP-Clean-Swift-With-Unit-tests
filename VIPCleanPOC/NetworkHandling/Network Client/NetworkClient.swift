@@ -8,22 +8,24 @@
 import Foundation
 
 class NetworkClient:NetworkClientProtocol {
-    func request(url: URL,
-                 httpMethod: NetworkHTTPMethod,
-                 encoding: Encoding,
-                 requestParameters: HTTPParameters?,
-                 requestHeaders: NetworkHTTPHeaders?,
-                 requestTimeout: TimeInterval?,
-                 responseHandler: @escaping ((NetworkServiceResponse) -> ())) {
+    func request<T:Codable>(url: URL,
+                            httpMethod: NetworkHTTPMethod,
+                            encoding: Encoding,
+                            requestParameters: HTTPParameters?,
+                            requestHeaders: NetworkHTTPHeaders?,
+                            requestTimeout: TimeInterval?,
+                            responseParsingClass:T.Type,
+                            responseHandler: @escaping ((NetworkServiceResponse) -> ())) {
     
         
     }
     
-    func upload(files: [Data],
-                url: URL,
-                httpMethod: NetworkHTTPMethod,
-                requestHeaders: NetworkHTTPHeaders?,
-                responseHandler: @escaping (NetworkServiceResponse) -> Void) {
+    func upload<T:Codable>(files: [Data],
+                           url: URL,
+                           httpMethod: NetworkHTTPMethod,
+                           requestHeaders: NetworkHTTPHeaders?,
+                           responseParsingClass:T.Type,
+                           responseHandler: @escaping (NetworkServiceResponse) -> Void) {
         
     }
     

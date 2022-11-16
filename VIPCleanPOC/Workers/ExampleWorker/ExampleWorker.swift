@@ -20,12 +20,13 @@ class ExampleWorker:BaseWorker,ExampleWorkerProtocol {
             return
         }
         
-        networkService.request(url: url,
-                               httpMethod: .get,
-                               encoding: .JSON,
-                               requestParameters: nil,
-                               requestHeaders: nil,
-                               requestTimeout: nil) { [weak self] serverResponse in
+        networkClient.request(url: url,
+                              httpMethod: .get,
+                              encoding: .JSON,
+                              requestParameters: nil,
+                              requestHeaders: nil,
+                              requestTimeout: nil,
+                              responseParsingClass: String.self) { [weak self] serverResponse in
             switch serverResponse {
             case .successData(let data):
                 guard let _data = data else {

@@ -9,18 +9,18 @@ import Foundation
 
 class BaseWorker{
     
-    let networkService: NetworkClientProtocol
+    let networkClient: NetworkClientProtocol
     let pathProvider: PathProviderProtocol
     let requestParameters: NetworkParameterProvider
     var authManager: AuthManagerProtocol
     let networkHeader: NetworkHeaderProvider
     
-    init(networkService: NetworkClientProtocol,
+    init(networkClient: NetworkClientProtocol,
          pathProvider: PathProviderProtocol,
          networkParameters: NetworkParameterProvider,
          networkHeader: NetworkHeaderProvider,
          authManager: AuthManagerProtocol) {
-        self.networkService = networkService
+        self.networkClient = networkClient
         self.pathProvider = pathProvider
         self.requestParameters = networkParameters
         self.authManager = authManager

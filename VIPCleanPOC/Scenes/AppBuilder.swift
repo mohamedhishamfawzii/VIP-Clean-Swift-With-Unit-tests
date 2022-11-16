@@ -16,12 +16,12 @@ class AppBuilder {
 
 private extension AppBuilder {
     func buildNetworkService() -> NetworkServiceProtocol {
-        let networkService = NetworkClient()
+        let networkClient = NetworkClient()
         let pathProvider = PathProvider(environmentProvider: Environment(type: .prod))
         let networkHeader = NetworkHeaderProviderImplementation()
         let parameters = NetworkParameter()
         let authManager = AuthManager()
-        return NetworkService(networkService: networkService,
+        return NetworkService(networkClient: networkClient,
                                    path: pathProvider,
                                    networkHeader: networkHeader,
                                    parameters: parameters,
