@@ -31,7 +31,6 @@ private extension NetworkParameter {
         guard let mapObject = try? JSONSerialization.jsonObject(with: dataObject) as? HTTPParameters else {
             return nil
         }
-        
         return mapObject
     }
     
