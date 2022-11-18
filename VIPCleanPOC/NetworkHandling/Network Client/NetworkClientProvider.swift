@@ -6,8 +6,10 @@
 //
 
 import Foundation
+import Alamofire
 
-class NetworkClient:NetworkClientProtocol {
+class NetworkClientProvider:NetworkClientProviderProtocol {
+    let provider = NetworkClientBuilder.build()
     func request<T:Codable>(url: URL,
                             httpMethod: NetworkHTTPMethod,
                             encoding: Encoding,
@@ -16,8 +18,6 @@ class NetworkClient:NetworkClientProtocol {
                             requestTimeout: TimeInterval?,
                             responseParsingClass:T.Type,
                             responseHandler: @escaping ((NetworkServiceResponse) -> ())) {
-    
-        
     }
     
     func upload<T:Codable>(files: [Data],
@@ -29,5 +29,20 @@ class NetworkClient:NetworkClientProtocol {
         
     }
     
+    
+}
+
+struct RequestEndpoint:Endpoint{
+    var baseURL: String
+    
+    var path: String
+    
+    var parameters: Alamofire.Parameters?
+    
+    var authorizationType: AuthorizationTypes
+    
+    var method: Alamofire.HTTPMethod
+    
+    var encoding: Alamofire.ParameterEncoding
     
 }

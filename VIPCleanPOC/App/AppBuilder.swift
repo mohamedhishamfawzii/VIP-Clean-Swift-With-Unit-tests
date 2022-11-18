@@ -16,7 +16,7 @@ class AppBuilder {
 
 private extension AppBuilder {
     func buildNetworkService() -> NetworkServiceProtocol {
-        let networkClient = NetworkClient()
+        let networkClient = NetworkClientProvider()
         let pathProvider = PathProvider(environmentProvider: Environment(type: .prod))
         let networkHeader = NetworkHeaderProviderImplementation()
         let parameters = NetworkParameter()

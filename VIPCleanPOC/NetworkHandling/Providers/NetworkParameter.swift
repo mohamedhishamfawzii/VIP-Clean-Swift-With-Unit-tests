@@ -10,7 +10,6 @@ protocol NetworkParameterProvider {
     func networkParameters(_ type: NetworkAction) -> HTTPParameters?
 }
 typealias HTTPParameters = [String: AnyHashable]
-typealias HTTPHeaders = [String: String]
 
 
 class NetworkParameter: NetworkParameterProvider {

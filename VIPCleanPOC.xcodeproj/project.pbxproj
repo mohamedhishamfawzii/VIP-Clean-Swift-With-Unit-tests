@@ -7,6 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		775370392927CC5B007A7FA9 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 775370382927CC5B007A7FA9 /* Alamofire */; };
+		775370582927CC7F007A7FA9 /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7753703C2927CC7E007A7FA9 /* NetworkLogger.swift */; };
+		775370592927CC7F007A7FA9 /* MultipartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7753703E2927CC7E007A7FA9 /* MultipartData.swift */; };
+		7753705A2927CC7F007A7FA9 /* NetworkReqeustFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775370402927CC7E007A7FA9 /* NetworkReqeustFactory.swift */; };
+		7753705B2927CC7F007A7FA9 /* AuthorizationTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775370422927CC7E007A7FA9 /* AuthorizationTypes.swift */; };
+		7753705C2927CC7F007A7FA9 /* NetworkClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775370442927CC7E007A7FA9 /* NetworkClientProtocol.swift */; };
+		7753705D2927CC7F007A7FA9 /* AuthTokenProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775370452927CC7E007A7FA9 /* AuthTokenProvider.swift */; };
+		7753705E2927CC7F007A7FA9 /* NetworkResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775370462927CC7E007A7FA9 /* NetworkResponseHandler.swift */; };
+		7753705F2927CC7F007A7FA9 /* WafErrorHandlerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775370472927CC7E007A7FA9 /* WafErrorHandlerProtocol.swift */; };
+		775370602927CC7F007A7FA9 /* ErrorProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775370482927CC7E007A7FA9 /* ErrorProviderProtocol.swift */; };
+		775370612927CC7F007A7FA9 /* GeneralErrorHandlerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775370492927CC7E007A7FA9 /* GeneralErrorHandlerProtocol.swift */; };
+		775370622927CC7F007A7FA9 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7753704B2927CC7E007A7FA9 /* Endpoint.swift */; };
+		775370632927CC7F007A7FA9 /* WAFErrorDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7753704D2927CC7E007A7FA9 /* WAFErrorDTO.swift */; };
+		775370642927CC7F007A7FA9 /* KlivrrError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7753704E2927CC7E007A7FA9 /* KlivrrError.swift */; };
+		775370652927CC7F007A7FA9 /* ValidationErrorDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7753704F2927CC7E007A7FA9 /* ValidationErrorDto.swift */; };
+		775370662927CC7F007A7FA9 /* ErrorDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775370502927CC7E007A7FA9 /* ErrorDto.swift */; };
+		775370672927CC7F007A7FA9 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775370522927CC7E007A7FA9 /* NetworkClient.swift */; };
+		775370682927CC7F007A7FA9 /* NetworkClient+Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775370532927CC7E007A7FA9 /* NetworkClient+Response.swift */; };
+		775370692927CC7F007A7FA9 /* NetworkClient+Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775370542927CC7E007A7FA9 /* NetworkClient+Error.swift */; };
+		7753706A2927CC7F007A7FA9 /* NetworkClient+Execute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775370552927CC7E007A7FA9 /* NetworkClient+Execute.swift */; };
+		7753706B2927CC7F007A7FA9 /* NetworkClient+upload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775370562927CC7E007A7FA9 /* NetworkClient+upload.swift */; };
+		7753706C2927CC7F007A7FA9 /* NetworkClient+Cancel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775370572927CC7E007A7FA9 /* NetworkClient+Cancel.swift */; };
+		7753706E2927CE1F007A7FA9 /* ErrorProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7753706D2927CE1F007A7FA9 /* ErrorProvider.swift */; };
+		775370702927CE64007A7FA9 /* NetworkClientBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7753706F2927CE64007A7FA9 /* NetworkClientBuilder.swift */; };
 		77BD3D75291D79D9000A1DB2 /* VIPCleanPOCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BD3D74291D79D9000A1DB2 /* VIPCleanPOCTests.swift */; };
 		77BD3D8D291D7ADA000A1DB2 /* TemplateIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77BD3D78291D7ADA000A1DB2 /* TemplateIcon@2x.png */; };
 		77BD3D8E291D7ADA000A1DB2 /* ___FILEBASENAME___Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BD3D7B291D7ADA000A1DB2 /* ___FILEBASENAME___Coordinator.swift */; };
@@ -26,10 +50,10 @@
 		77BD3DC72922603F000A1DB2 /* AppBuilderProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BD3DC62922603F000A1DB2 /* AppBuilderProvider.swift */; };
 		77BD3DC929226071000A1DB2 /* AppBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BD3DC829226071000A1DB2 /* AppBuilder.swift */; };
 		77BD3DCB292260FD000A1DB2 /* NetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BD3DCA292260FD000A1DB2 /* NetworkServiceProtocol.swift */; };
-		77BD3DCD29226365000A1DB2 /* NetworkClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BD3DCC29226365000A1DB2 /* NetworkClientProtocol.swift */; };
+		77BD3DCD29226365000A1DB2 /* NetworkClientProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BD3DCC29226365000A1DB2 /* NetworkClientProviderProtocol.swift */; };
 		77BD3DCF292264D0000A1DB2 /* NetworkHTTPHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BD3DCE292264D0000A1DB2 /* NetworkHTTPHelper.swift */; };
 		77BD3DD129226622000A1DB2 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BD3DD029226622000A1DB2 /* AuthManager.swift */; };
-		77BD3DD529226825000A1DB2 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BD3DD429226825000A1DB2 /* NetworkClient.swift */; };
+		77BD3DD529226825000A1DB2 /* NetworkClientProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BD3DD429226825000A1DB2 /* NetworkClientProvider.swift */; };
 		77BD3DD7292269E5000A1DB2 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BD3DD6292269E5000A1DB2 /* NetworkService.swift */; };
 		77BD3DD929226C28000A1DB2 /* PathProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BD3DD829226C28000A1DB2 /* PathProvider.swift */; };
 		77BD3DDB29226DB0000A1DB2 /* NetworkAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BD3DDA29226DB0000A1DB2 /* NetworkAction.swift */; };
@@ -93,6 +117,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7753703C2927CC7E007A7FA9 /* NetworkLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
+		7753703E2927CC7E007A7FA9 /* MultipartData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipartData.swift; sourceTree = "<group>"; };
+		775370402927CC7E007A7FA9 /* NetworkReqeustFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkReqeustFactory.swift; sourceTree = "<group>"; };
+		775370422927CC7E007A7FA9 /* AuthorizationTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationTypes.swift; sourceTree = "<group>"; };
+		775370442927CC7E007A7FA9 /* NetworkClientProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClientProtocol.swift; sourceTree = "<group>"; };
+		775370452927CC7E007A7FA9 /* AuthTokenProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthTokenProvider.swift; sourceTree = "<group>"; };
+		775370462927CC7E007A7FA9 /* NetworkResponseHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkResponseHandler.swift; sourceTree = "<group>"; };
+		775370472927CC7E007A7FA9 /* WafErrorHandlerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WafErrorHandlerProtocol.swift; sourceTree = "<group>"; };
+		775370482927CC7E007A7FA9 /* ErrorProviderProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorProviderProtocol.swift; sourceTree = "<group>"; };
+		775370492927CC7E007A7FA9 /* GeneralErrorHandlerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralErrorHandlerProtocol.swift; sourceTree = "<group>"; };
+		7753704B2927CC7E007A7FA9 /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		7753704D2927CC7E007A7FA9 /* WAFErrorDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WAFErrorDTO.swift; sourceTree = "<group>"; };
+		7753704E2927CC7E007A7FA9 /* KlivrrError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KlivrrError.swift; sourceTree = "<group>"; };
+		7753704F2927CC7E007A7FA9 /* ValidationErrorDto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationErrorDto.swift; sourceTree = "<group>"; };
+		775370502927CC7E007A7FA9 /* ErrorDto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorDto.swift; sourceTree = "<group>"; };
+		775370522927CC7E007A7FA9 /* NetworkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		775370532927CC7E007A7FA9 /* NetworkClient+Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NetworkClient+Response.swift"; sourceTree = "<group>"; };
+		775370542927CC7E007A7FA9 /* NetworkClient+Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NetworkClient+Error.swift"; sourceTree = "<group>"; };
+		775370552927CC7E007A7FA9 /* NetworkClient+Execute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NetworkClient+Execute.swift"; sourceTree = "<group>"; };
+		775370562927CC7E007A7FA9 /* NetworkClient+upload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NetworkClient+upload.swift"; sourceTree = "<group>"; };
+		775370572927CC7E007A7FA9 /* NetworkClient+Cancel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NetworkClient+Cancel.swift"; sourceTree = "<group>"; };
+		7753706D2927CE1F007A7FA9 /* ErrorProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorProvider.swift; sourceTree = "<group>"; };
+		7753706F2927CE64007A7FA9 /* NetworkClientBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientBuilder.swift; sourceTree = "<group>"; };
 		77BD3D74291D79D9000A1DB2 /* VIPCleanPOCTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VIPCleanPOCTests.swift; path = VIPCleanPOCTests/VIPCleanPOCTests.swift; sourceTree = SOURCE_ROOT; };
 		77BD3D78291D7ADA000A1DB2 /* TemplateIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TemplateIcon@2x.png"; sourceTree = "<group>"; };
 		77BD3D7B291D7ADA000A1DB2 /* ___FILEBASENAME___Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___Coordinator.swift"; sourceTree = "<group>"; };
@@ -112,10 +159,10 @@
 		77BD3DC62922603F000A1DB2 /* AppBuilderProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBuilderProvider.swift; sourceTree = "<group>"; };
 		77BD3DC829226071000A1DB2 /* AppBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBuilder.swift; sourceTree = "<group>"; };
 		77BD3DCA292260FD000A1DB2 /* NetworkServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceProtocol.swift; sourceTree = "<group>"; };
-		77BD3DCC29226365000A1DB2 /* NetworkClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientProtocol.swift; sourceTree = "<group>"; };
+		77BD3DCC29226365000A1DB2 /* NetworkClientProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientProviderProtocol.swift; sourceTree = "<group>"; };
 		77BD3DCE292264D0000A1DB2 /* NetworkHTTPHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHTTPHelper.swift; sourceTree = "<group>"; };
 		77BD3DD029226622000A1DB2 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
-		77BD3DD429226825000A1DB2 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		77BD3DD429226825000A1DB2 /* NetworkClientProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientProvider.swift; sourceTree = "<group>"; };
 		77BD3DD6292269E5000A1DB2 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		77BD3DD829226C28000A1DB2 /* PathProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathProvider.swift; sourceTree = "<group>"; };
 		77BD3DDA29226DB0000A1DB2 /* NetworkAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAction.swift; sourceTree = "<group>"; };
@@ -170,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				77BD3DF12924F6ED000A1DB2 /* (null) in Frameworks */,
+				775370392927CC5B007A7FA9 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,6 +238,98 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7753703A2927CC7E007A7FA9 /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				7753703B2927CC7E007A7FA9 /* Logger */,
+				7753703D2927CC7E007A7FA9 /* Response */,
+				7753703F2927CC7E007A7FA9 /* NetworkFactory */,
+				775370412927CC7E007A7FA9 /* Enums */,
+				775370432927CC7E007A7FA9 /* Protocol */,
+				7753704A2927CC7E007A7FA9 /* Endpoint */,
+				7753704C2927CC7E007A7FA9 /* Error */,
+				775370512927CC7E007A7FA9 /* NetworkClient */,
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		7753703B2927CC7E007A7FA9 /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				7753703C2927CC7E007A7FA9 /* NetworkLogger.swift */,
+			);
+			path = Logger;
+			sourceTree = "<group>";
+		};
+		7753703D2927CC7E007A7FA9 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				7753703E2927CC7E007A7FA9 /* MultipartData.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		7753703F2927CC7E007A7FA9 /* NetworkFactory */ = {
+			isa = PBXGroup;
+			children = (
+				775370402927CC7E007A7FA9 /* NetworkReqeustFactory.swift */,
+			);
+			path = NetworkFactory;
+			sourceTree = "<group>";
+		};
+		775370412927CC7E007A7FA9 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				775370422927CC7E007A7FA9 /* AuthorizationTypes.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		775370432927CC7E007A7FA9 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				775370442927CC7E007A7FA9 /* NetworkClientProtocol.swift */,
+				775370452927CC7E007A7FA9 /* AuthTokenProvider.swift */,
+				775370462927CC7E007A7FA9 /* NetworkResponseHandler.swift */,
+				775370472927CC7E007A7FA9 /* WafErrorHandlerProtocol.swift */,
+				775370482927CC7E007A7FA9 /* ErrorProviderProtocol.swift */,
+				775370492927CC7E007A7FA9 /* GeneralErrorHandlerProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		7753704A2927CC7E007A7FA9 /* Endpoint */ = {
+			isa = PBXGroup;
+			children = (
+				7753704B2927CC7E007A7FA9 /* Endpoint.swift */,
+			);
+			path = Endpoint;
+			sourceTree = "<group>";
+		};
+		7753704C2927CC7E007A7FA9 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				7753704D2927CC7E007A7FA9 /* WAFErrorDTO.swift */,
+				7753704E2927CC7E007A7FA9 /* KlivrrError.swift */,
+				7753704F2927CC7E007A7FA9 /* ValidationErrorDto.swift */,
+				775370502927CC7E007A7FA9 /* ErrorDto.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		775370512927CC7E007A7FA9 /* NetworkClient */ = {
+			isa = PBXGroup;
+			children = (
+				775370522927CC7E007A7FA9 /* NetworkClient.swift */,
+				775370532927CC7E007A7FA9 /* NetworkClient+Response.swift */,
+				775370542927CC7E007A7FA9 /* NetworkClient+Error.swift */,
+				775370552927CC7E007A7FA9 /* NetworkClient+Execute.swift */,
+				775370562927CC7E007A7FA9 /* NetworkClient+upload.swift */,
+				775370572927CC7E007A7FA9 /* NetworkClient+Cancel.swift */,
+			);
+			path = NetworkClient;
+			sourceTree = "<group>";
+		};
 		77BD3D76291D7ADA000A1DB2 /* VIP clean  */ = {
 			isa = PBXGroup;
 			children = (
@@ -322,6 +462,7 @@
 				77BD3DE02923B08A000A1DB2 /* NetworkParameter.swift */,
 				77BD3DD829226C28000A1DB2 /* PathProvider.swift */,
 				77BD3DDE2922711A000A1DB2 /* HeaderProvider.swift */,
+				7753706D2927CE1F007A7FA9 /* ErrorProvider.swift */,
 			);
 			path = Providers;
 			sourceTree = "<group>";
@@ -329,8 +470,9 @@
 		77BD3DEE2924F2D6000A1DB2 /* Network Client */ = {
 			isa = PBXGroup;
 			children = (
-				77BD3DCC29226365000A1DB2 /* NetworkClientProtocol.swift */,
-				77BD3DD429226825000A1DB2 /* NetworkClient.swift */,
+				77BD3DCC29226365000A1DB2 /* NetworkClientProviderProtocol.swift */,
+				77BD3DD429226825000A1DB2 /* NetworkClientProvider.swift */,
+				7753706F2927CE64007A7FA9 /* NetworkClientBuilder.swift */,
 			);
 			path = "Network Client";
 			sourceTree = "<group>";
@@ -381,6 +523,7 @@
 				77D2F9EA291D72C900CAF269 /* Scenes */,
 				77BD3DE82923CB10000A1DB2 /* Workers */,
 				77BD3DEB2923CB5E000A1DB2 /* NetworkHandling */,
+				7753703A2927CC7E007A7FA9 /* NetworkLayer */,
 				77D2F9EC291D72FD00CAF269 /* Resources */,
 				77D2F99E291D0B8000CAF269 /* LaunchScreen.storyboard */,
 				77D2F9A1291D0B8000CAF269 /* Info.plist */,
@@ -601,6 +744,9 @@
 			dependencies = (
 			);
 			name = VIPCleanPOC;
+			packageProductDependencies = (
+				775370382927CC5B007A7FA9 /* Alamofire */,
+			);
 			productName = VIPCleanPOC;
 			productReference = 77D2F990291D0B8000CAF269 /* VIPCleanPOC.app */;
 			productType = "com.apple.product-type.application";
@@ -673,6 +819,9 @@
 				Base,
 			);
 			mainGroup = 77D2F987291D0B8000CAF269;
+			packageReferences = (
+				775370372927CC5B007A7FA9 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 77D2F991291D0B8000CAF269 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -723,8 +872,13 @@
 				77D2FA06291D739300CAF269 /* ExampleChildController.swift in Sources */,
 				77D2FA07291D739300CAF269 /* ExampleChildControllerProtocol.swift in Sources */,
 				77BD3DDD29226E70000A1DB2 /* Enviroment.swift in Sources */,
+				7753706E2927CE1F007A7FA9 /* ErrorProvider.swift in Sources */,
 				77D2F9E1291D0BA100CAF269 /* ExampleResourses.swift in Sources */,
-				77BD3DD529226825000A1DB2 /* NetworkClient.swift in Sources */,
+				77BD3DD529226825000A1DB2 /* NetworkClientProvider.swift in Sources */,
+				7753705D2927CC7F007A7FA9 /* AuthTokenProvider.swift in Sources */,
+				7753705E2927CC7F007A7FA9 /* NetworkResponseHandler.swift in Sources */,
+				775370692927CC7F007A7FA9 /* NetworkClient+Error.swift in Sources */,
+				775370602927CC7F007A7FA9 /* ErrorProviderProtocol.swift in Sources */,
 				77D2F9D8291D0BA100CAF269 /* ExampleCoordinator.swift in Sources */,
 				77BD3DCB292260FD000A1DB2 /* NetworkServiceProtocol.swift in Sources */,
 				77D2FA09291D739300CAF269 /* ExampleChildView.swift in Sources */,
@@ -732,46 +886,64 @@
 				77D2F9D9291D0BA100CAF269 /* ExamplePresenter.swift in Sources */,
 				77D2F9DE291D0BA100CAF269 /* ExampleViewProtocol.swift in Sources */,
 				77D2F9E0291D0BA100CAF269 /* ExampleInteractorProtocol.swift in Sources */,
-				77BD3DCD29226365000A1DB2 /* NetworkClientProtocol.swift in Sources */,
+				77BD3DCD29226365000A1DB2 /* NetworkClientProviderProtocol.swift in Sources */,
 				77D2FA08291D739300CAF269 /* ExampleChildViewProtocol.swift in Sources */,
 				77BD3D96291D7ADA000A1DB2 /* ___FILEBASENAME___InteractorProtocol.swift in Sources */,
 				77D2FA0B291D739300CAF269 /* ExampleChildInteractor.swift in Sources */,
 				77D2FA10291D767A00CAF269 /* Array+Extension.swift in Sources */,
+				7753705A2927CC7F007A7FA9 /* NetworkReqeustFactory.swift in Sources */,
 				77D2F994291D0B8000CAF269 /* AppDelegate.swift in Sources */,
 				77D2F9E5291D33A200CAF269 /* BaseCoordinatorProtocol.swift in Sources */,
 				77BD3DCF292264D0000A1DB2 /* NetworkHTTPHelper.swift in Sources */,
 				77BD3DDF2922711A000A1DB2 /* HeaderProvider.swift in Sources */,
 				77BD3D90291D7ADA000A1DB2 /* ___FILEBASENAME___Presenter.swift in Sources */,
 				77D2F9DB291D0BA100CAF269 /* ExampleControllerProtocol.swift in Sources */,
+				7753706B2927CC7F007A7FA9 /* NetworkClient+upload.swift in Sources */,
 				77BD3DE72923C6E1000A1DB2 /* BaseWorker.swift in Sources */,
+				775370682927CC7F007A7FA9 /* NetworkClient+Response.swift in Sources */,
 				77D2F9DA291D0BA100CAF269 /* ExamplePresenterProtocol.swift in Sources */,
 				77BD3DD129226622000A1DB2 /* AuthManager.swift in Sources */,
+				7753705C2927CC7F007A7FA9 /* NetworkClientProtocol.swift in Sources */,
 				77BD3DE12923B08A000A1DB2 /* NetworkParameter.swift in Sources */,
 				77BD3D93291D7ADA000A1DB2 /* ___FILEBASENAME___ControllerProtocol.swift in Sources */,
+				775370702927CE64007A7FA9 /* NetworkClientBuilder.swift in Sources */,
 				77BD3D92291D7ADA000A1DB2 /* ___FILEBASENAME___Controller.swift in Sources */,
+				7753705F2927CC7F007A7FA9 /* WafErrorHandlerProtocol.swift in Sources */,
 				77BD3D98291D7ADA000A1DB2 /* ___FILEBASENAME___Resourses.swift in Sources */,
 				77D2FA05291D739300CAF269 /* ExampleChildPresenterProtocol.swift in Sources */,
 				77D2FA0C291D739300CAF269 /* ExampleChildResourses.swift in Sources */,
+				775370642927CC7F007A7FA9 /* KlivrrError.swift in Sources */,
 				77D2F9D7291D0BA100CAF269 /* ExampleCoordinatorProtocol.swift in Sources */,
 				77BD3D91291D7ADA000A1DB2 /* ___FILEBASENAME___PresenterProtocol.swift in Sources */,
 				77D2F9DC291D0BA100CAF269 /* ExampleController.swift in Sources */,
+				775370632927CC7F007A7FA9 /* WAFErrorDTO.swift in Sources */,
+				7753706A2927CC7F007A7FA9 /* NetworkClient+Execute.swift in Sources */,
+				7753705B2927CC7F007A7FA9 /* AuthorizationTypes.swift in Sources */,
+				775370672927CC7F007A7FA9 /* NetworkClient.swift in Sources */,
+				775370622927CC7F007A7FA9 /* Endpoint.swift in Sources */,
 				77BD3D95291D7ADA000A1DB2 /* ___FILEBASENAME___View.swift in Sources */,
+				775370662927CC7F007A7FA9 /* ErrorDto.swift in Sources */,
 				77BD3DE32923C312000A1DB2 /* ExampleWorker.swift in Sources */,
 				77BD3D97291D7ADA000A1DB2 /* ___FILEBASENAME___Interactor.swift in Sources */,
+				775370612927CC7F007A7FA9 /* GeneralErrorHandlerProtocol.swift in Sources */,
 				77BD3DC72922603F000A1DB2 /* AppBuilderProvider.swift in Sources */,
 				77BD3DE52923C683000A1DB2 /* ExampleWorkerProtocol.swift in Sources */,
 				77BD3D8E291D7ADA000A1DB2 /* ___FILEBASENAME___Coordinator.swift in Sources */,
 				77D2FA03291D739300CAF269 /* ExampleChildCoordinator.swift in Sources */,
+				775370582927CC7F007A7FA9 /* NetworkLogger.swift in Sources */,
 				77BD3D8F291D7ADA000A1DB2 /* ___FILEBASENAME___CoordinatorProtocol.swift in Sources */,
 				77BD3D94291D7ADA000A1DB2 /* ___FILEBASENAME___ViewProtocol.swift in Sources */,
 				77BD3DC929226071000A1DB2 /* AppBuilder.swift in Sources */,
 				77D2F996291D0B8000CAF269 /* SceneDelegate.swift in Sources */,
 				77BD3DD7292269E5000A1DB2 /* NetworkService.swift in Sources */,
+				775370652927CC7F007A7FA9 /* ValidationErrorDto.swift in Sources */,
 				77BD3DD929226C28000A1DB2 /* PathProvider.swift in Sources */,
 				77BD3DDB29226DB0000A1DB2 /* NetworkAction.swift in Sources */,
 				77D2FA04291D739300CAF269 /* ExampleChildPresenter.swift in Sources */,
+				7753706C2927CC7F007A7FA9 /* NetworkClient+Cancel.swift in Sources */,
 				77D2F9DD291D0BA100CAF269 /* ExampleView.swift in Sources */,
 				77D2FA02291D739300CAF269 /* ExampleChildCoordinatorProtocol.swift in Sources */,
+				775370592927CC7F007A7FA9 /* MultipartData.swift in Sources */,
 				77D2FA0A291D739300CAF269 /* ExampleChildInteractorProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1114,6 +1286,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		775370372927CC5B007A7FA9 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		775370382927CC5B007A7FA9 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 775370372927CC5B007A7FA9 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 77D2F988291D0B8000CAF269 /* Project object */;
 }

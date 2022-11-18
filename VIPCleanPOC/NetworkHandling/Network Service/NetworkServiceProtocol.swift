@@ -8,6 +8,6 @@
 import Foundation
 
 protocol NetworkServiceProtocol {
-    var authManager: AuthManagerProtocol { get }
+    var authManager: AuthTokenProviderProtocol { get }
     var exampleWorker: ExampleWorkerProtocol { get }
 }

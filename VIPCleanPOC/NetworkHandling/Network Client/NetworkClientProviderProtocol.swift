@@ -6,7 +6,7 @@
 //
 
 import Foundation
-protocol NetworkClientProtocol {
+protocol NetworkClientProviderProtocol {
     
     func request<T:Codable>(url: URL,
                  httpMethod: NetworkHTTPMethod,

@@ -7,10 +7,7 @@
 
 import Foundation
 
-protocol AuthManagerProtocol {
-    var authTokens: AuthTokens? { set get }
-    func clear()
-}
+
 
 struct AuthTokens: Codable {
     var accessToken: String
@@ -22,9 +19,9 @@ struct AuthTokens: Codable {
     }
 }
 
-class AuthManager: AuthManagerProtocol {
-    var authTokens: AuthTokens?
-    func clear() {
+class AuthManager: AuthTokenProviderProtocol {
+    func requestAuthToken(closure: @escaping Success) {
+        
     }
     required init() {
     }

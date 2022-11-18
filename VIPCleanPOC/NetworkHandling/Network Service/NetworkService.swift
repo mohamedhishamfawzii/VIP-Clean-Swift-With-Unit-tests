@@ -13,18 +13,18 @@ class NetworkService: NetworkServiceProtocol {
        return makeExampleWorker()
    }
 
-   private let networkClient: NetworkClientProtocol
+   private let networkClient: NetworkClientProviderProtocol
    private let pathProvider: PathProviderProtocol
    private let networkHeader: NetworkHeaderProvider
    private let networkParameters: NetworkParameterProvider
    
-   let authManager: AuthManagerProtocol
+   let authManager: AuthTokenProviderProtocol
    
-   init(networkClient: NetworkClientProtocol,
+   init(networkClient: NetworkClientProviderProtocol,
         path: PathProviderProtocol,
         networkHeader: NetworkHeaderProvider,
         parameters: NetworkParameterProvider,
-        authManager: AuthManagerProtocol) {
+        authManager: AuthTokenProviderProtocol) {
        self.networkClient = networkClient
        self.pathProvider = path
        self.networkParameters = parameters

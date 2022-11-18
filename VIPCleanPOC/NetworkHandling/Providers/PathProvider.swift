@@ -6,10 +6,10 @@
 //
 
 import Foundation
-typealias Endpoint = String
+typealias URLString = String
 
 fileprivate struct Endpoints {
-    static let login: Endpoint = ""
+    static let login: URLString = ""
 }
 
 
@@ -34,12 +34,12 @@ protocol PathProviderProtocol {
 private extension PathProvider {
         typealias QueryItem = (name: String, value: String?)
         
-        func toURL(_ endpoint: Endpoint) -> URL? {
+        func toURL(_ endpoint: URLString) -> URL? {
             return environment.baseURL.appendingPathComponent(endpoint)
         }
         
-        func toURL(_ mainPath: Endpoint, query: QueryItem) -> URL? {
-            var _endpoint: Endpoint = mainPath
+        func toURL(_ mainPath: URLString, query: QueryItem) -> URL? {
+            var _endpoint: URLString = mainPath
             
             if let _queryValue = query.value {
                 _endpoint = _endpoint + "/" + _queryValue + query.name
