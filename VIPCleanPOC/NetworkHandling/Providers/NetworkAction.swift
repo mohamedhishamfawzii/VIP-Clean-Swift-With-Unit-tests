@@ -6,6 +6,22 @@
 //
 
 import Foundation
-enum NetworkAction {
+protocol NetworkAction {
+    var path: String {get}
+    var parameters: [String: String] {get}
+}
+enum LoginNetworkAction: NetworkAction{
     case login
+    var path: String {
+        switch self {
+        case .login:
+            return "/login"
+        }
+    }
+    var parameters: [String: String] {
+        switch self {
+        case .login:
+            return [:]
+        }
+    }
 }

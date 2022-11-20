@@ -13,20 +13,22 @@ enum ExampleRequestError:Error {
     case error
 }
 class ExampleWorker:BaseWorker,ExampleWorkerProtocol {
-    
     func exampleRequest(completion:@escaping ExampleRequestCompletion){
-        guard let url = pathProvider.createURL(type: .login) else {
+        guard let url = pathProvider.createURL(type: LoginNetworkAction.login) else {
             completion(.failure(.URLError))
             return
         }
+        let parameters = requestParameters.networkParameters(LoginNetworkAction.login)
         
         networkClient.request(url: url,
                               httpMethod: .get,
-                              encoding: .JSON,
-                              requestParameters: nil,
+                              requestParameters: parameters ,
                               requestHeaders: nil,
                               requestTimeout: nil,
-                              responseParsingClass: String.self) { [weak self] serverResponse in
+                              responseParsingClass: String.self,
+                              authType: .none,
+                              endPointType: .server,
+                              parameterEncoding: .JSON) { [weak self] serverResponse in
             switch serverResponse {
             case .successData(let data):
                 guard let _data = data else {

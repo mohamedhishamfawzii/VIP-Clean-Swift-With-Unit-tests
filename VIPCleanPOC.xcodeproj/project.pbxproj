@@ -31,6 +31,13 @@
 		7753706C2927CC7F007A7FA9 /* NetworkClient+Cancel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775370572927CC7E007A7FA9 /* NetworkClient+Cancel.swift */; };
 		7753706E2927CE1F007A7FA9 /* ErrorProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7753706D2927CE1F007A7FA9 /* ErrorProvider.swift */; };
 		775370702927CE64007A7FA9 /* NetworkClientBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7753706F2927CE64007A7FA9 /* NetworkClientBuilder.swift */; };
+		77537090292A47B2007A7FA9 /* KeychainStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77537088292A47B2007A7FA9 /* KeychainStorage.swift */; };
+		77537091292A47B2007A7FA9 /* UserDefaultsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77537089292A47B2007A7FA9 /* UserDefaultsStorage.swift */; };
+		77537093292A47B2007A7FA9 /* KlivvrKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7753708B292A47B2007A7FA9 /* KlivvrKeys.swift */; };
+		77537094292A47B2007A7FA9 /* DataStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7753708C292A47B2007A7FA9 /* DataStorageManager.swift */; };
+		77537095292A47B2007A7FA9 /* DataStorageProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7753708D292A47B2007A7FA9 /* DataStorageProtocol.swift */; };
+		77537096292A47B2007A7FA9 /* DataStorageKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7753708E292A47B2007A7FA9 /* DataStorageKeys.swift */; };
+		7753709A292A488C007A7FA9 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 77537099292A488C007A7FA9 /* KeychainSwift */; };
 		77BD3D75291D79D9000A1DB2 /* VIPCleanPOCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BD3D74291D79D9000A1DB2 /* VIPCleanPOCTests.swift */; };
 		77BD3D8D291D7ADA000A1DB2 /* TemplateIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77BD3D78291D7ADA000A1DB2 /* TemplateIcon@2x.png */; };
 		77BD3D8E291D7ADA000A1DB2 /* ___FILEBASENAME___Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BD3D7B291D7ADA000A1DB2 /* ___FILEBASENAME___Coordinator.swift */; };
@@ -140,6 +147,12 @@
 		775370572927CC7E007A7FA9 /* NetworkClient+Cancel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NetworkClient+Cancel.swift"; sourceTree = "<group>"; };
 		7753706D2927CE1F007A7FA9 /* ErrorProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorProvider.swift; sourceTree = "<group>"; };
 		7753706F2927CE64007A7FA9 /* NetworkClientBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientBuilder.swift; sourceTree = "<group>"; };
+		77537088292A47B2007A7FA9 /* KeychainStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainStorage.swift; sourceTree = "<group>"; };
+		77537089292A47B2007A7FA9 /* UserDefaultsStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsStorage.swift; sourceTree = "<group>"; };
+		7753708B292A47B2007A7FA9 /* KlivvrKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KlivvrKeys.swift; sourceTree = "<group>"; };
+		7753708C292A47B2007A7FA9 /* DataStorageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStorageManager.swift; sourceTree = "<group>"; };
+		7753708D292A47B2007A7FA9 /* DataStorageProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStorageProtocol.swift; sourceTree = "<group>"; };
+		7753708E292A47B2007A7FA9 /* DataStorageKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStorageKeys.swift; sourceTree = "<group>"; };
 		77BD3D74291D79D9000A1DB2 /* VIPCleanPOCTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VIPCleanPOCTests.swift; path = VIPCleanPOCTests/VIPCleanPOCTests.swift; sourceTree = SOURCE_ROOT; };
 		77BD3D78291D7ADA000A1DB2 /* TemplateIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TemplateIcon@2x.png"; sourceTree = "<group>"; };
 		77BD3D7B291D7ADA000A1DB2 /* ___FILEBASENAME___Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___Coordinator.swift"; sourceTree = "<group>"; };
@@ -216,6 +229,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7753709A292A488C007A7FA9 /* KeychainSwift in Frameworks */,
 				77BD3DF12924F6ED000A1DB2 /* (null) in Frameworks */,
 				775370392927CC5B007A7FA9 /* Alamofire in Frameworks */,
 			);
@@ -328,6 +342,27 @@
 				775370572927CC7E007A7FA9 /* NetworkClient+Cancel.swift */,
 			);
 			path = NetworkClient;
+			sourceTree = "<group>";
+		};
+		77537086292A47B2007A7FA9 /* DataStorage */ = {
+			isa = PBXGroup;
+			children = (
+				77537087292A47B2007A7FA9 /* Storages */,
+				7753708B292A47B2007A7FA9 /* KlivvrKeys.swift */,
+				7753708C292A47B2007A7FA9 /* DataStorageManager.swift */,
+				7753708D292A47B2007A7FA9 /* DataStorageProtocol.swift */,
+				7753708E292A47B2007A7FA9 /* DataStorageKeys.swift */,
+			);
+			path = DataStorage;
+			sourceTree = "<group>";
+		};
+		77537087292A47B2007A7FA9 /* Storages */ = {
+			isa = PBXGroup;
+			children = (
+				77537088292A47B2007A7FA9 /* KeychainStorage.swift */,
+				77537089292A47B2007A7FA9 /* UserDefaultsStorage.swift */,
+			);
+			path = Storages;
 			sourceTree = "<group>";
 		};
 		77BD3D76291D7ADA000A1DB2 /* VIP clean  */ = {
@@ -523,6 +558,7 @@
 				77D2F9EA291D72C900CAF269 /* Scenes */,
 				77BD3DE82923CB10000A1DB2 /* Workers */,
 				77BD3DEB2923CB5E000A1DB2 /* NetworkHandling */,
+				77537086292A47B2007A7FA9 /* DataStorage */,
 				7753703A2927CC7E007A7FA9 /* NetworkLayer */,
 				77D2F9EC291D72FD00CAF269 /* Resources */,
 				77D2F99E291D0B8000CAF269 /* LaunchScreen.storyboard */,
@@ -746,6 +782,7 @@
 			name = VIPCleanPOC;
 			packageProductDependencies = (
 				775370382927CC5B007A7FA9 /* Alamofire */,
+				77537099292A488C007A7FA9 /* KeychainSwift */,
 			);
 			productName = VIPCleanPOC;
 			productReference = 77D2F990291D0B8000CAF269 /* VIPCleanPOC.app */;
@@ -821,6 +858,7 @@
 			mainGroup = 77D2F987291D0B8000CAF269;
 			packageReferences = (
 				775370372927CC5B007A7FA9 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				77537098292A488C007A7FA9 /* XCRemoteSwiftPackageReference "keychain-swift" */,
 			);
 			productRefGroup = 77D2F991291D0B8000CAF269 /* Products */;
 			projectDirPath = "";
@@ -874,6 +912,7 @@
 				77BD3DDD29226E70000A1DB2 /* Enviroment.swift in Sources */,
 				7753706E2927CE1F007A7FA9 /* ErrorProvider.swift in Sources */,
 				77D2F9E1291D0BA100CAF269 /* ExampleResourses.swift in Sources */,
+				77537093292A47B2007A7FA9 /* KlivvrKeys.swift in Sources */,
 				77BD3DD529226825000A1DB2 /* NetworkClientProvider.swift in Sources */,
 				7753705D2927CC7F007A7FA9 /* AuthTokenProvider.swift in Sources */,
 				7753705E2927CC7F007A7FA9 /* NetworkResponseHandler.swift in Sources */,
@@ -891,6 +930,7 @@
 				77BD3D96291D7ADA000A1DB2 /* ___FILEBASENAME___InteractorProtocol.swift in Sources */,
 				77D2FA0B291D739300CAF269 /* ExampleChildInteractor.swift in Sources */,
 				77D2FA10291D767A00CAF269 /* Array+Extension.swift in Sources */,
+				77537091292A47B2007A7FA9 /* UserDefaultsStorage.swift in Sources */,
 				7753705A2927CC7F007A7FA9 /* NetworkReqeustFactory.swift in Sources */,
 				77D2F994291D0B8000CAF269 /* AppDelegate.swift in Sources */,
 				77D2F9E5291D33A200CAF269 /* BaseCoordinatorProtocol.swift in Sources */,
@@ -907,6 +947,7 @@
 				77BD3DE12923B08A000A1DB2 /* NetworkParameter.swift in Sources */,
 				77BD3D93291D7ADA000A1DB2 /* ___FILEBASENAME___ControllerProtocol.swift in Sources */,
 				775370702927CE64007A7FA9 /* NetworkClientBuilder.swift in Sources */,
+				77537094292A47B2007A7FA9 /* DataStorageManager.swift in Sources */,
 				77BD3D92291D7ADA000A1DB2 /* ___FILEBASENAME___Controller.swift in Sources */,
 				7753705F2927CC7F007A7FA9 /* WafErrorHandlerProtocol.swift in Sources */,
 				77BD3D98291D7ADA000A1DB2 /* ___FILEBASENAME___Resourses.swift in Sources */,
@@ -921,9 +962,11 @@
 				7753705B2927CC7F007A7FA9 /* AuthorizationTypes.swift in Sources */,
 				775370672927CC7F007A7FA9 /* NetworkClient.swift in Sources */,
 				775370622927CC7F007A7FA9 /* Endpoint.swift in Sources */,
+				77537096292A47B2007A7FA9 /* DataStorageKeys.swift in Sources */,
 				77BD3D95291D7ADA000A1DB2 /* ___FILEBASENAME___View.swift in Sources */,
 				775370662927CC7F007A7FA9 /* ErrorDto.swift in Sources */,
 				77BD3DE32923C312000A1DB2 /* ExampleWorker.swift in Sources */,
+				77537095292A47B2007A7FA9 /* DataStorageProtocol.swift in Sources */,
 				77BD3D97291D7ADA000A1DB2 /* ___FILEBASENAME___Interactor.swift in Sources */,
 				775370612927CC7F007A7FA9 /* GeneralErrorHandlerProtocol.swift in Sources */,
 				77BD3DC72922603F000A1DB2 /* AppBuilderProvider.swift in Sources */,
@@ -943,6 +986,7 @@
 				7753706C2927CC7F007A7FA9 /* NetworkClient+Cancel.swift in Sources */,
 				77D2F9DD291D0BA100CAF269 /* ExampleView.swift in Sources */,
 				77D2FA02291D739300CAF269 /* ExampleChildCoordinatorProtocol.swift in Sources */,
+				77537090292A47B2007A7FA9 /* KeychainStorage.swift in Sources */,
 				775370592927CC7F007A7FA9 /* MultipartData.swift in Sources */,
 				77D2FA0A291D739300CAF269 /* ExampleChildInteractorProtocol.swift in Sources */,
 			);
@@ -1296,6 +1340,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		77537098292A488C007A7FA9 /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/keychain-swift.git";
+			requirement = {
+				kind = exactVersion;
+				version = 20.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1303,6 +1355,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 775370372927CC5B007A7FA9 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		77537099292A488C007A7FA9 /* KeychainSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 77537098292A488C007A7FA9 /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			productName = KeychainSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

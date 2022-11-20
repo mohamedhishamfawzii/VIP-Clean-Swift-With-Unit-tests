@@ -26,4 +26,5 @@ class BaseWorker{
         self.authManager = authManager
         self.networkHeader = networkHeader
     }
+    
 }

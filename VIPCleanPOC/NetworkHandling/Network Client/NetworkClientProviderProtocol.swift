@@ -10,17 +10,19 @@ protocol NetworkClientProviderProtocol {
     
     func request<T:Codable>(url: URL,
                  httpMethod: NetworkHTTPMethod,
-                 encoding: Encoding,
                  requestParameters: NetworkHTTPParameters?,
                  requestHeaders: NetworkHTTPHeaders?,
                  requestTimeout: TimeInterval?,
                  responseParsingClass:T.Type,
+                 authType: AuthorizationTypes,
+                 endPointType: EndpointType,
+                 parameterEncoding: ParameterEncoding,
                  responseHandler: @escaping ((NetworkServiceResponse) -> ()))
     
     func upload<T:Codable>(files: [Data],
                 url: URL,
                 httpMethod: NetworkHTTPMethod,
-                requestHeaders: NetworkHTTPHeaders?,
                 responseParsingClass:T.Type,
+                authType: AuthorizationTypes,
                 responseHandler: @escaping (NetworkServiceResponse) -> Void)
 }

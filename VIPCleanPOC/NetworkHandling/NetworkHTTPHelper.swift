@@ -17,7 +17,7 @@ enum NetworkHTTPMethod: String {
     case trace   = "TRACE"
     case connect = "CONNECT"
 }
-enum Encoding: Int {
+enum ParameterEncoding: Int {
     case URL
     case JSON
     case queryString

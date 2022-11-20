@@ -15,11 +15,7 @@ typealias HTTPParameters = [String: AnyHashable]
 class NetworkParameter: NetworkParameterProvider {
     
     func networkParameters(_ type: NetworkAction) -> HTTPParameters? {
-        
-        switch type {
-        case .login:
-            return [:]
-        }
+        return type.parameters
     }}
 
 private extension NetworkParameter {

@@ -20,6 +20,18 @@ struct AuthTokens: Codable {
 }
 
 class AuthManager: AuthTokenProviderProtocol {
+    var authTokens: AuthTokens? {
+        set {
+            DataStorageManager.shared.save(newValue?.accessToken, for: .accessToken)
+            DataStorageManager.shared.save(newValue?.refreshToken, for: .refreshToken)
+        }
+        get {
+            let accessToken = DataStorageManager.shared.fetch(for: .accessToken) ?? ""
+            let refershToken = DataStorageManager.shared.fetch(for: .refreshToken) ?? ""
+            return AuthTokens(accessToken: accessToken, refreshToken: refershToken)
+        }
+    }
+
     func requestAuthToken(closure: @escaping Success) {
         
     }

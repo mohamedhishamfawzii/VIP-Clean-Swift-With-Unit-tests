@@ -8,10 +8,6 @@
 import Foundation
 typealias URLString = String
 
-fileprivate struct Endpoints {
-    static let login: URLString = ""
-}
-
 
 class PathProvider: PathProviderProtocol {
     private let environment: EnvironmentProvider
@@ -21,10 +17,7 @@ class PathProvider: PathProviderProtocol {
     }
     
     func createURL(type: NetworkAction) -> URL? {
-        switch type {
-        case .login:
-            return URL(string: "google.com")
-        }
+        return URL(string: "baseURL" + type.path)
     }
 }
 
